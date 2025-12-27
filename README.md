@@ -7,7 +7,7 @@ This is the official personal portfolio website for **Hitanshu Jena**, a Softwar
 
 The site is designed with a modern **Dark Theme**, featuring glassmorphism effects, smooth scroll animations, and a fully responsive layout.
 
-🔗 **Live Demo:** [https://hitanshu-jena.github.io](https://hitanshu-jena.github.io)
+🔗 **Live Demo:** [https://hitanshu-jena.github.io](https://hitanshu-j.github.io/my-portfolio-web/)
 
 ## 🛠️ Tech Stack
 * **Frontend:** HTML5, CSS3
