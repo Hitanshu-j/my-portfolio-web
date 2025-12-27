@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitanshu Jena | Software Engineer</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        slate: { 850: '#151e2e', 900: '#0f172a', 950: '#020617' },
+                        emerald: { 450: '#10b981' }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-300 selection:bg-emerald-500 selection:text-white">
+
+    <nav class="fixed w-full z-50 glass-card border-b border-white/5 transition-all duration-300" id="navbar">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 font-bold text-xl text-emerald-400 tracking-tight cursor-pointer">
+                    Hitanshu<span class="text-white">.dev</span>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="hover:text-emerald-400 transition-colors px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="#about" class="hover:text-emerald-400 transition-colors px-3 py-2 text-sm font-medium">About</a>
+                        <a href="#skills" class="hover:text-emerald-400 transition-colors px-3 py-2 text-sm font-medium">Skills</a>
+                        <a href="#projects" class="hover:text-emerald-400 transition-colors px-3 py-2 text-sm font-medium">Projects</a>
+                        <a href="#experience" class="hover:text-emerald-400 transition-colors px-3 py-2 text-sm font-medium">Experience</a>
+                        <a href="#contact" class="bg-emerald-600/90 hover:bg-emerald-500 text-white px-5 py-2 rounded-full text-sm font-medium transition-all hover:shadow-[0_0_15px_rgba(16,185,129,0.4)]">Let's Connect</a>
+                    </div>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-slate-300 hover:text-white">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-950/95 border-b border-slate-800 backdrop-blur-xl absolute w-full">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <a href="#home" class="block px-3 py-3 text-base font-medium hover:text-emerald-400">Home</a>
+                <a href="#about" class="block px-3 py-3 text-base font-medium hover:text-emerald-400">About</a>
+                <a href="#skills" class="block px-3 py-3 text-base font-medium hover:text-emerald-400">Skills</a>
+                <a href="#projects" class="block px-3 py-3 text-base font-medium hover:text-emerald-400">Projects</a>
+                <a href="#contact" class="block px-3 py-3 text-base font-medium text-emerald-400 font-bold">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative pt-32 pb-20 lg:pt-52 lg:pb-40 overflow-hidden flex items-center justify-center">
+        <div class="absolute top-1/2 left-1/2 w-[600px] h-[600px] bg-emerald-500/15 rounded-full blur-[100px] -z-10 blob-animation"></div>
+
+        <div class="max-w-4xl mx-auto px-4 text-center z-10">
+            <div class="inline-flex items-center px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/5 text-emerald-400 text-sm font-medium mb-6 animate-pulse">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 mr-2"></span>
+                Open to Work
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+                Hi, I'm Hitanshu. I am a <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 typing-container" id="typing-text"></span>
+            </h1>
+            
+            <p class="mt-6 max-w-2xl mx-auto text-xl text-slate-400 leading-relaxed reveal">
+                Building scalable microservices and robust backend systems using <span class="text-white font-semibold">Java Spring Boot</span>.
+            </p>
+            
+            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4 reveal">
+                <a href="#projects" class="group px-8 py-3.5 rounded-full bg-white text-slate-900 font-bold hover:bg-emerald-50 transition-all hover:scale-105 flex items-center justify-center gap-2">
+                    View My Work <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+                <a href="#contact" class="px-8 py-3.5 rounded-full border border-slate-700 hover:border-emerald-500 hover:text-emerald-400 transition-all hover:bg-emerald-500/5 font-semibold">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-slate-900/30">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-8 flex items-center gap-3 reveal">
+                <i data-lucide="user" class="text-emerald-400"></i> About Me
+            </h2>
+            <div class="glass-card rounded-2xl p-8 hover-lift reveal">
+                <p class="text-lg leading-relaxed text-slate-300 mb-4">
+                    I am a final-year B.Tech student graduating in 2026 from Gandhi Academy of Technology and Engineering.
+                </p>
+                <p class="text-lg leading-relaxed text-slate-300 mb-4">
+                    I have a strong foundation in <span class="text-white font-semibold">Data Structures and Algorithms</span> and specialize in the full Software Development Life Cycle. 
+                    My expertise lies in building secure, scalable microservices and full-stack solutions using <span class="text-emerald-400 font-semibold">Java Spring Boot</span> and modern web technologies.
+                </p>
+                <div class="flex flex-wrap gap-4 mt-6">
+                    <div class="flex items-center gap-2 text-sm text-slate-400">
+                        <i data-lucide="map-pin" class="w-4 h-4 text-emerald-500"></i> Odisha, India
+                    </div>
+                    <div class="flex items-center gap-2 text-sm text-slate-400">
+                        <i data-lucide="graduation-cap" class="w-4 h-4 text-emerald-500"></i> B.Tech (2026)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center reveal">Technical Arsenal</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal">
+                <div class="glass-card p-6 rounded-xl border-t-4 border-t-orange-500 hover-lift">
+                    <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2"><i data-lucide="code-2" class="text-orange-500"></i> Languages</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-sm bg-slate-800 rounded-full text-slate-300">Java</span>
+                        <span class="px-3 py-1 text-sm bg-slate-800 rounded-full text-slate-300">JavaScript</span>
+                        <span class="px-3 py-1 text-sm bg-slate-800 rounded-full text-slate-300">TypeScript</span>
+                        <span class="px-3 py-1 text-sm bg-slate-800 rounded-full text-slate-300">Python</span>
+                        <span class="px-3 py-1 text-sm bg-slate-800 rounded-full text-slate-300">SQL</span>
+                        <span class="px-3 py-1 text-sm bg-slate-800 rounded-full text-slate-300">HTML/CSS</span>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl border-t-4 border-t-emerald-500 hover-lift">
+                    <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2"><i data-lucide="server" class="text-emerald-500"></i> Frameworks</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-sm bg-slate-800 rounded-full text-slate-300 border border-emerald-500/30">Spring Boot</span>
+                        <span class="px-3 py-1 text-sm bg-slate-800 rounded-full text-slate-300">Spring Security</span>
+                        <span class="px-3 py-1 text-sm bg-slate-800 rounded-full text-slate-300">Hibernate/JPA</span>
+                        <span class="px-3 py-1 text-sm bg-slate-800 rounded-full text-slate-300">Microservices</span>
+                        <span class="px-3 py-1 text-sm bg-slate-800 rounded-full text-slate-300">React</span>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl border-t-4 border-t-blue-500 hover-lift">
+                    <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2"><i data-lucide="database" class="text-blue-500"></i> DB & Tools</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-sm bg-slate-800 rounded-full text-slate-300">MySQL</span>
+                        <span class="px-3 py-1 text-sm bg-slate-800 rounded-full text-slate-300">MongoDB</span>
+                        <span class="px-3 py-1 text-sm bg-slate-800 rounded-full text-slate-300">Redis</span>
+                        <span class="px-3 py-1 text-sm bg-slate-800 rounded-full text-slate-300">Kafka</span>
+                        <span class="px-3 py-1 text-sm bg-slate-800 rounded-full text-slate-300">Docker</span>
+                        <span class="px-3 py-1 text-sm bg-slate-800 rounded-full text-slate-300">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 bg-slate-900/30">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center reveal">Experience</h2>
+            
+            <div class="space-y-8 relative border-l-2 border-emerald-500/10 ml-4 pl-8">
+                
+                <div class="relative reveal hover-lift p-4 rounded-xl hover:bg-white/5 transition-colors">
+                    <span class="absolute -left-[43px] top-6 h-6 w-6 rounded-full bg-emerald-500 border-4 border-slate-950 shadow-[0_0_15px_rgba(16,185,129,0.5)]"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">Backend Developer Intern</h3>
+                        <span class="text-xs font-mono py-1 px-2 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Present</span>
+                    </div>
+                    <div class="text-lg font-semibold text-emerald-400 mb-2">UltimateSchool.AI <span class="text-slate-500 text-sm font-normal ml-2">(Startup)</span></div>
+                    <p class="text-slate-400">
+                        Currently working side-by-side to build scalable backend architecture and optimize API performance for the EdTech platform.
+                    </p>
+                </div>
+
+                <div class="relative reveal hover-lift p-4 rounded-xl hover:bg-white/5 transition-colors">
+                    <span class="absolute -left-[43px] top-6 h-6 w-6 rounded-full bg-slate-700 border-4 border-slate-950"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">Internship Trainee</h3>
+                        <span class="text-xs font-mono py-1 px-2 rounded bg-slate-800 text-slate-400">Nov 2025 - Present</span>
+                    </div>
+                    <div class="text-lg font-semibold text-emerald-400 mb-2">Infosys Springboard</div>
+                    <p class="text-slate-400">Built a Crypto Portfolio Tracker with real-time API integration and developed risk analysis algorithms to detect scam tokens.</p>
+                </div>
+
+                <div class="relative reveal hover-lift p-4 rounded-xl hover:bg-white/5 transition-colors">
+                    <span class="absolute -left-[43px] top-6 h-6 w-6 rounded-full bg-slate-800 border-4 border-slate-950"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">Java Developer Intern</h3>
+                        <span class="text-xs font-mono py-1 px-2 rounded bg-slate-800 text-slate-400">Dec 2024 - Jan 2025</span>
+                    </div>
+                    <div class="text-lg font-semibold text-emerald-400 mb-2">CodeAlpha</div>
+                    <p class="text-slate-400">Architected a Travel Planner application consuming 3rd party APIs and developed various console-based Java systems.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-12 flex items-center gap-3 reveal">
+                <i data-lucide="folder-git-2" class="text-emerald-400"></i> Featured Projects
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <div class="glass-card rounded-2xl p-8 hover-lift reveal group border-t-4 border-t-emerald-500">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-white group-hover:text-emerald-400 transition-colors">AI Interview App</h3>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/Hitanshu-j/AiInterview" target="_blank" class="text-slate-400 hover:text-white transition-colors"><i data-lucide="github"></i></a>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        A Full-Stack platform integrating Generative AI to generate dynamic interview questions and provide real-time feedback.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-xs font-semibold bg-emerald-500/10 text-emerald-400 rounded-full">Spring Boot</span>
+                        <span class="px-3 py-1 text-xs font-semibold bg-emerald-500/10 text-emerald-400 rounded-full">AI API</span>
+                        <span class="px-3 py-1 text-xs font-semibold bg-emerald-500/10 text-emerald-400 rounded-full">JavaScript</span>
+                        <span class="px-3 py-1 text-xs font-semibold bg-emerald-500/10 text-emerald-400 rounded-full">WebSocket</span>
+                        <span class="px-3 py-1 text-xs font-semibold bg-emerald-500/10 text-emerald-400 rounded-full">MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl p-8 hover-lift reveal group border-t-4 border-t-blue-500">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">Crypto Tracker</h3>
+                        <a href="https://github.com/springboardmentor2807/crypto_portfolio_tracker_backend_team1" target="_blank" class="text-slate-400 hover:text-white transition-colors"><i data-lucide="github"></i></a>
+                    </div>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        Real-time investment tracking using Binance APIs. Features scam token risk analysis and JWT authentication.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-xs font-semibold bg-blue-500/10 text-blue-400 rounded-full">Java</span>
+                        <span class="px-3 py-1 text-xs font-semibold bg-blue-500/10 text-blue-400 rounded-full">Spring Security</span>
+                        <span class="px-3 py-1 text-xs font-semibold bg-blue-500/10 text-blue-400 rounded-full">JWT</span>
+                        <span class="px-3 py-1 text-xs font-semibold bg-blue-500/10 text-blue-400 rounded-full">API Integrations like Binance, CoinGecko etc.</span>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl p-8 hover-lift reveal group border-t-4 border-t-purple-500 md:col-span-2">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-white group-hover:text-purple-400 transition-colors">E-Commerce Backend</h3>
+                        <a href="https://github.com/Hitanshu-j/EcommerceApplication" target="_blank" class="text-slate-400 hover:text-white transition-colors"><i data-lucide="github"></i></a>
+                    </div>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        Robust backend system featuring RBAC (Role-Based Access Control), ACID-compliant transactions, and MySQL database management.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-xs font-semibold bg-purple-500/10 text-purple-400 rounded-full">Spring Data JPA</span>
+                        <span class="px-3 py-1 text-xs font-semibold bg-purple-500/10 text-purple-400 rounded-full">MySQL</span>
+                        <span class="px-3 py-1 text-xs font-semibold bg-purple-500/10 text-purple-400 rounded-full">Maven</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-slate-900/30">
+        <div class="max-w-3xl mx-auto px-4 text-center reveal">
+            <h2 class="text-3xl font-bold text-white mb-6">Ready to Collaborate?</h2>
+            <p class="text-slate-400 mb-8">
+                Currently open to roles as a <strong>Backend Developer</strong>, <strong>Software Engineer</strong>, or <strong>Full Stack Developer</strong>.
+            </p>
+
+            <form action="https://api.web3forms.com/submit" method="POST" class="max-w-md mx-auto space-y-4 text-left glass-card p-8 rounded-2xl">
+
+                <input type="hidden" name="access_key" value="b9644848-24d8-4cac-9d46-7bb3c20624f7">
+                <div>
+                    <label class="block text-sm font-medium text-slate-400 mb-1">Name</label>
+                    <input type="text" name="name" required class="w-full bg-slate-800/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-emerald-500 transition-colors">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-400 mb-1">Email</label>
+                    <input type="email" name="email" required class="w-full bg-slate-800/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-emerald-500 transition-colors">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-400 mb-1">Message</label>
+                    <textarea name="message" rows="4" required class="w-full bg-slate-800/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-emerald-500 transition-colors"></textarea>
+                </div>
+                
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-lg transition-all transform active:scale-95">
+                    Send Message
+                </button>
+            </form>
+            
+            <p class="mt-8 text-slate-500">Or email: <a href="mailto:jenahitanshu9@gmail.com" class="text-emerald-400 hover:underline">jenahitanshu9@gmail.com</a></p>
+            <div class="flex justify-center gap-6 mt-4">
+                <a href="https://github.com/Hitanshu-j" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+                    <i data-lucide="github" class="w-6 h-6"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/hitanshu-jena-1708a2298?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BY%2Bh8EVZqRea7Dj2MjGYPTA%3D%3D" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+                    <i data-lucide="linkedin" class="w-6 h-6"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-6 text-center border-t border-slate-900 bg-slate-950 text-slate-500 text-sm">
+        <p>&copy; 2025 Hitanshu Jena. Built with Tailwind CSS & Java Logic.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
